@@ -1,4 +1,5 @@
 import React from 'react';
+import ChartComponent from './ChartComponent';
 
 const weatherData = [
   { x: 'Monday', y: 35 },
@@ -11,7 +12,9 @@ const weatherData = [
 ];
 
 const App = () => {
-  return <div className="container" />;
+  return <div className="container">
+            <ChartComponent data={weatherData} width="530" height="280" />
+    </div>;
 };
 
 export default App;
